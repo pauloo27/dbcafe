@@ -1,0 +1,10 @@
+:root {
+  --bg-main: #1a1a1a;
+  --bg-main-opacity: rgba(26, 26, 26, 0.5);
+  --bg-alt: #212121;
+  --bg-alt2: #888888;
+  --text-main: #C0FFEE;
+
+  --border-main: #5F9AB6;
+  --border-alt: #C0FFEE;
+}

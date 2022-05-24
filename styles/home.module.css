@@ -1,2 +1,32 @@
-.bg {
+.mainContainer {
+  background-image: url(/images/bg.jpg);
+  background-size: cover;
+  height: 100vh;
+  width: 100vw;
+  display: flex;
+  justify-content: space-between;
+}
+
+.rightContainer {
+  background-color: var(--bg-main-opacity);
+  backdrop-filter: blur(10px);
+  width: 455px;
+}
+
+.title, .subtitle {
+  font-weight: normal;
+  font-family: 'Kadwa', serif;
+  text-align: center;
+}
+
+.title {
+  font-size: 59px;
+}
+
+.loginForm {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin: 10px;
+  gap: 20px;
 }
