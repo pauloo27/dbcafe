@@ -1,5 +1,6 @@
 import styles from '@styles/home.module.css'
 import TextInput from '@components/inputs/text'
+import Button from '@components/inputs/button'
 
 export default function Home() {
   return (
@@ -11,6 +12,7 @@ export default function Home() {
         <div className={styles.loginForm}>
           <TextInput label="E-mail" placeholder="name@example.com" />
           <TextInput label="Password" type="password" placeholder="********" />
+          <Button label="Login" />
         </div>
       </div>
     </div>

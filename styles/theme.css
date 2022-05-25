@@ -4,7 +4,10 @@
   --bg-alt: #212121;
   --bg-alt2: #888888;
   --text-main: #C0FFEE;
+  --text-alt: #000;
 
   --border-main: #5F9AB6;
   --border-alt: #C0FFEE;
+
+  --action-primary: #5ECACE;
 }
