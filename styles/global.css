@@ -20,3 +20,9 @@ body {
 .textCenter {
   text-align: center;
 }
+
+a {
+  color: var(--links);
+  cursor: pointer;
+}
+

@@ -11,16 +11,26 @@
   background-color: var(--bg-main-opacity);
   backdrop-filter: blur(10px);
   width: 455px;
+  padding: 0 10px;
 }
 
 .title, .subtitle {
   font-weight: normal;
   font-family: 'Kadwa', serif;
   text-align: center;
+  line-height: 1;
 }
 
 .title {
   font-size: 59px;
+}
+
+.subtitle {
+  font-size: 25px;
+}
+
+.titleContainer {
+  margin: 40px 20px;
 }
 
 .loginForm {
@@ -29,4 +39,8 @@
   justify-content: center;
   margin: 10px;
   gap: 20px;
+}
+
+.loginButton {
+  margin: 20px 0;
 }

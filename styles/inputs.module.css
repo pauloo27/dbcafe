@@ -18,6 +18,11 @@
   flex-direction: column;
 }
 
+.textInputLabelHelperContainer {
+  display: flex;
+  justify-content: space-between;
+}
+
 .button {
   border: none;
   background: var(--action-primary);
