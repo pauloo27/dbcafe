@@ -1,6 +1,7 @@
 import styles from '@styles/home.module.css'
 import TextInput from '@components/inputs/text'
 import Button from '@components/inputs/button'
+import Checkbox from '@components/inputs/checkbox'
 
 function forgotPassword() {
   return (
@@ -11,7 +12,12 @@ function forgotPassword() {
 export default function Home() {
   return (
     <div className={styles.mainContainer}>
-      <div className={styles.leftContainer} />
+      <div className={styles.leftContainer}>
+        <a href="#">Contact us</a>
+        <a target="_blank" href="https://unsplash.com/photos/eQu4HfK53lk" rel="noreferrer">
+          Photo by Naveen Prajapat on Unsplash
+        </a>
+      </div>
       <div className={styles.rightContainer}>
         <div className={styles.titleContainer}>
           <h1 className={styles.title}>DB Cafe</h1>
@@ -20,7 +26,13 @@ export default function Home() {
         <div className={styles.loginForm}>
           <TextInput label="E-mail" placeholder="name@example.com" />
           <TextInput label="Password" helper={forgotPassword()} type="password" placeholder="********" />
+          <Checkbox label="Remember-me" />
           <Button className={styles.loginButton} label="Login" />
+          <span>
+            Not a member?
+            {' '}
+            <a href="#">Ask for an account</a>
+          </span>
         </div>
       </div>
     </div>
