@@ -22,7 +22,7 @@
   padding: 0 10px;
 }
 
-.title, .subtitle {
+.title, .subtitle, .status {
   font-weight: normal;
   font-family: 'Kadwa', serif;
   text-align: center;
@@ -35,6 +35,13 @@
 
 .subtitle {
   font-size: 25px;
+}
+
+.status {
+  color: var(--error-main);
+  font-size: 18px;
+  margin-top: 10px;
+  margin-bottom: -28px;
 }
 
 .titleContainer {
