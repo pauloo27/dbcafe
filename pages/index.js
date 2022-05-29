@@ -27,7 +27,7 @@ export default function Home() {
     if (status === LoginStatus.SUCCESS) {
       window.location.href = 'https://mail.db.cafe/webmail'
     }
-  }, [status]);
+  }, [status])
 
   const handleSubmit = () => {
     setStatus(LoginStatus.PENDING)
@@ -54,13 +54,15 @@ export default function Home() {
           <h1 className={styles.title}>DB Cafe</h1>
           <h2 className={styles.subtitle}>The best coffee in cyber space</h2>
           {
-            status === LoginStatus.FAILURE &&
-            <h3 className={styles.status}>Incorrect email or password</h3>
+            status === LoginStatus.FAILURE
+            && <h3 className={styles.status}>Incorrect email or password</h3>
           }
         </div>
         <div className={styles.loginForm}>
           <TextInput
-            ref={emailRef} label="E-mail" placeholder="name@example.com"
+            ref={emailRef}
+            label="E-mail"
+            placeholder="name@example.com"
           />
           <TextInput
             ref={passwordRef}
