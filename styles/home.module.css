@@ -15,6 +15,23 @@
   gap: 20px;
 }
 
+
+@media only screen and (max-width: 950px) {
+  .mainContainer {
+    flex-direction: column-reverse;
+  }
+
+  .rightContainer {
+    width: 100% !important;
+    flex-grow: 1;
+  }
+
+  .leftContainer {
+    background-color: var(--bg-main-opacity);
+    backdrop-filter: blur(10px);
+  }
+}
+
 .rightContainer {
   background-color: var(--bg-main-opacity);
   backdrop-filter: blur(10px);
