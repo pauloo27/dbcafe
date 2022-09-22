@@ -1,68 +1,8 @@
-.mainContainer {
-  height: 100vh;
-  width: 100vw;
-  display: flex;
-  justify-content: space-between;
-}
-
-.leftContainer {
-  display: flex;
-  flex-direction: column;
-  justify-content: flex-end;
-  padding: 20px;
-  gap: 20px;
-}
-
-
-@media only screen and (max-width: 950px) {
-  .mainContainer {
-    flex-direction: column-reverse;
-    background-color: var(--bg-main-opacity);
-    backdrop-filter: blur(10px);
-  }
-
-  .rightContainer {
-    width: 100% !important;
-    flex-grow: 1;
-    backdrop-filter: none !important;
-  }
-
-  .leftContainer {
-    background-color: var(--bg-main-opacity);
-  }
-}
-
-.rightContainer {
-  background-color: var(--bg-main-opacity);
-  backdrop-filter: blur(10px);
-  width: 455px;
-  padding: 0 10px;
-}
-
-.title, .subtitle, .status {
-  font-weight: normal;
-  font-family: 'Kadwa', serif;
-  text-align: center;
-  line-height: 1;
-}
-
-.title {
-  font-size: 59px;
-}
-
-.subtitle {
-  font-size: 25px;
-}
-
 .status {
   color: var(--error-main);
   font-size: 18px;
   margin-top: 10px;
   margin-bottom: -28px;
-}
-
-.titleContainer {
-  margin: 40px 20px;
 }
 
 .loginForm {

@@ -1,5 +1,6 @@
 import Head from 'next/head'
-import styles from '@styles/home.module.css'
+import styles from '@styles/common.module.css'
+import pageStyles from '@styles/home.module.css'
 import TextInput from '@components/inputs/text'
 import Button from '@components/inputs/button'
 import Checkbox from '@components/inputs/checkbox'
@@ -60,10 +61,10 @@ export default function Home() {
             <h2 className={styles.subtitle}>The best coffee in cyber space</h2>
             {
             status === LoginStatus.FAILURE
-            && <h3 className={styles.status}>Incorrect email or password</h3>
+            && <h3 className={pageStyles.status}>Incorrect email or password</h3>
           }
           </div>
-          <div className={styles.loginForm}>
+          <div className={pageStyles.loginForm}>
             <TextInput
               ref={emailRef}
               label="E-mail"
@@ -78,7 +79,7 @@ export default function Home() {
               placeholder="********"
             />
             <Checkbox label="Remember-me" />
-            <Button onClick={handleSubmit} className={styles.loginButton} label="Login" />
+            <Button onClick={handleSubmit} className={pageStyles.loginButton} label="Login" />
             <span>
               Not a member?
               {' '}
