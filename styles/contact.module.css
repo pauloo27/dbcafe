@@ -1,0 +1,15 @@
+.emailHighlight {
+  color: var(--links);
+}
+
+.contentTitle {
+  font-size: 32px;
+  font-weight: normal;
+  text-align: center;
+}
+
+.content {
+  font-size: 23px;
+  text-align: center;
+  padding: 30px;
+}
