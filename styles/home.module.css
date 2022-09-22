@@ -1,6 +1,4 @@
 .mainContainer {
-  background-image: url(/images/bg.jpg);
-  background-size: cover;
   height: 100vh;
   width: 100vw;
   display: flex;
@@ -19,16 +17,18 @@
 @media only screen and (max-width: 950px) {
   .mainContainer {
     flex-direction: column-reverse;
+    background-color: var(--bg-main-opacity);
+    backdrop-filter: blur(10px);
   }
 
   .rightContainer {
     width: 100% !important;
     flex-grow: 1;
+    backdrop-filter: none !important;
   }
 
   .leftContainer {
     background-color: var(--bg-main-opacity);
-    backdrop-filter: blur(10px);
   }
 }
 
