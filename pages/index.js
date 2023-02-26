@@ -32,7 +32,7 @@ export default function Home() {
 
   useEffect(() => {
     if (status === LoginStatus.SUCCESS) {
-      window.location.href = 'https://mail.db.cafe/webmail'
+      window.location.href = 'https://mail.db.cafe/webmail/index.php'
     }
   }, [status])
 
